@@ -1,6 +1,8 @@
 from aux_functions import main_archives, std_filter
 import pandas as pd
 
+# incluindo os momentos estatísticos na tabela de informações
+
 arquivos = main_archives()
 
 infos = dict()
