@@ -6,8 +6,8 @@ from pandas import DataFrame, read_csv
 #Folder contendo funções que usualmente utilizo nos outros códigos, a maioria são referentes
 # a quando estávamos ajustando os arquivos das estações
 
-def main_archives():                                    # seleciona os arquivos principais dentro da pasta que estamos trabalhando
-    chdir('C:\\Users\\joaop\\Desktop\\Dados INMET\\Estacoes')
+def main_archives():                                             # seleciona os arquivos principais dentro da pasta que estamos trabalhando
+    chdir('C:\\Users\\joaop\\Desktop\\Dados INMET\\Estacoes')    # caso queira usar esses códigos, tem que mudar o caminho aonde está os arquivos
     return listdir()[2:]
 
 def remove_blank_spaces(df:DataFrame) -> DataFrame:     # remove os espaços em branco das colunas
