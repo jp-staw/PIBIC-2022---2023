@@ -1,5 +1,7 @@
 import os
 
+# transforma os arquivos por ano em arquivos por estação
+
 diretorios = {2000+i:f'C:\\Users\\joaop\\Desktop\\Dados INMET\\Anos\\{2000+i}' for i in range(0,23)}
 
 for diretorio in diretorios:
