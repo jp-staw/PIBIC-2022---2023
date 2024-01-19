@@ -25,23 +25,3 @@ for arquivo in arquivos:
     plt.savefig(f'C:\\Users\\joaop\\Desktop\\Dados INMET\\Estacoes\\histogramas\\{arquivo}.png')
     plt.clf()
     plt.close()
-
-'''
-arq = pd.read_csv(arquivos[0], encoding='latin-1', sep=';', na_values='', low_memory=False, skip_blank_lines=True)
-coluna = arq['PRESSAO ATMOSFERICA AO NIVEL DA ESTACAO, HORARIA (mB)']
-mean = coluna.mean()
-std = coluna.std()
-N = 3
-lower_bound = mean-N*std
-upper_bound = mean+N*std
-
-fig, axs = plt.subplots(1, 2, sharey= False)
-fig.suptitle(f'{arquivos[0]}')
-coluna = std_filter(coluna, lower_bound, upper_bound)
-
-axs[0].plot(coluna)
-
-axs[1].hist(coluna, bins=400, orientation='horizontal', range=(lower_bound, upper_bound), histtype = 'stepfilled')
-
-plt.show()
-'''
