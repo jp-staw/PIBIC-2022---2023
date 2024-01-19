@@ -1,11 +1,10 @@
-from aux_functions import main_archives
+from aux_functions import main_archives, soma
 from functools import reduce
 import os
 
-arquivos = main_archives()
+# criando a tabela de informações
 
-def soma(a,b):
-    return f'{a+b};'
+arquivos = main_archives()
 
 for arquivo in arquivos:
     with open(arquivo, 'r') as arq:
