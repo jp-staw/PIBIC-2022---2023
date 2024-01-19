@@ -1,5 +1,7 @@
 from aux_functions import main_archives
 
+# trocando vírgula por ponto nos arquivos
+
 arquivos = main_archives()
 
 for arquivo in arquivos:
